@@ -48,4 +48,15 @@ h1{
 
 .form-check-input{
  margin-right: 2rem;
+ justify-self: start;
+}
+
+.done{
+  color: gainsboro;
+  text-decoration: line-through;
+}
+
+.deleteTaskBtn{
+  margin-left: 1.5rem;
+  padding: 3px;
 }

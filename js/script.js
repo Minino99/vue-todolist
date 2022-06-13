@@ -1,15 +1,19 @@
 let toDoList = [
+ {
+  name : "Learn VueJS",
+  completed : false,
+ },
     {
      name : "Learn JavaScript",
      completed : false,
     },
     {
      name : "Learn HTML",
-     completed : false,
+     completed : true,
     },
     {
      name : "Learn CSS",
-     completed : false,
+     completed : true,
     },
     {
      name : "Buy groceries",
@@ -23,6 +27,20 @@ let toDoList = [
 const vue = new Vue({
     el: '#app',
     data: {
-        vueToDoList: toDoList,
+        toDoList: toDoList,
     },
+    methods: {
+     toggleTask() {
+      if (this.toDoList.completed === true) {
+        this.toDoList.completed === false;
+      }else {
+        this.toDoList.completed === true;
+      }
+      }
+     },
+
+     deleteTask() {
+      this.toDoList.splice;
+     }
+
    });
