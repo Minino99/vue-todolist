@@ -1,0 +1,47 @@
+:root {
+ --bs-primary: rgba(223, 120, 97, 1);
+ --bs-secondary: rgba(236, 179, 144, 1);
+ --bs-success: rgba(148, 180, 159, 1);
+}
+
+#app {
+  min-height: 100vh;
+  background: rgb(252, 248, 232);
+  background: linear-gradient(
+    126deg,
+    rgba(252, 248, 232, 1) 35%,
+    rgba(148, 180, 159, 1) 58%,
+    rgba(236, 179, 144, 1) 83%,
+    rgba(223, 120, 97, 1) 100%
+  );
+  color: var(--bs-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+ color: var(--bs-primary);
+}
+
+.tdlbody{
+ background-color: whitesmoke;
+ border-radius: 13px;
+ -webkit-box-shadow: 4px 5px 53px -9px #000000;
+ -moz-box-shadow: 4px 5px 53px -9px #000000;
+ -o-box-shadow: 4px 5px 53px -9px #000000;
+ box-shadow: 4px 5px 53px -9px #000000;
+ max-width: 40%;
+}
+
+.form-check{
+ transform: scale(1.7);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 1rem;
+}
+
+.form-check-input{
+ margin-right: 2rem;
+}
