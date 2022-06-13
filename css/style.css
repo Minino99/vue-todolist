@@ -22,6 +22,8 @@
 
 h1{
  color: var(--bs-primary);
+ border-bottom: 2px solid gainsboro;
+ padding-bottom: 1rem;
 }
 
 .tdlbody{
@@ -32,6 +34,8 @@ h1{
  -o-box-shadow: 4px 5px 53px -9px #000000;
  box-shadow: 4px 5px 53px -9px #000000;
  max-width: 40%;
+ padding:0px;
+ padding-bottom: 1rem;
 }
 
 .form-check{
