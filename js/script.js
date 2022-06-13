@@ -40,5 +40,8 @@ const vue = new Vue({
         });
       }
     },
+    toggleTask(i) {
+      this.toDoList[i].completed = !this.toDoList[i].completed;
+    },
   },
 });
