@@ -27,8 +27,8 @@ const vue = new Vue({
         toDoList: toDoList,
     },
     methods: {
-     deleteTask(tasks, i) {
-      tasks.splice(i, 1);
+     deleteTask(i) {
+      this.toDoList.splice(i, 1);
      }
     },
    });
