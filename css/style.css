@@ -60,3 +60,13 @@ h1{
   margin-left: 1.5rem;
   padding: 3px;
 }
+
+.newtaskinput{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.realinput{
+  border: 0px;
+}
