@@ -22,11 +22,11 @@
     <div id="app">
       <div class="container tdlbody">
         <h1 class="text-center mb-4">the vuejs to do list</h1>
-        <div v-for ="toDo in toDoList" class="form-check">
-          <label class="form-check-label" for="flexCheckDefault" :class="{'done' : toDo.completed}" @click="toggleTask()">
+        <div v-for ="(toDo, i) in toDoList" class="form-check">
+          <label class="form-check-label" for="flexCheckDefault" :class="{'done' : toDo.completed}" @click="toggleTask(toDo, i)">
             {{ toDo.name }}
           </label>
-          <button type="button" @click="deleteTask()" class="btn btn-danger deleteTaskBtn">X</button>
+          <button type="button" @click="deleteTask(toDo, i)" class="btn btn-danger deleteTaskBtn">X</button>
         </div>
       </div>
     </div>

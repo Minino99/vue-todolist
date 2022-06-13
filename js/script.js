@@ -21,26 +21,14 @@ let toDoList = [
     }
 ];
 
-
-
-
 const vue = new Vue({
     el: '#app',
     data: {
         toDoList: toDoList,
     },
     methods: {
-     toggleTask() {
-      if (this.toDoList.completed === true) {
-        this.toDoList.completed === false;
-      }else {
-        this.toDoList.completed === true;
-      }
-      }
-     },
-
-     deleteTask() {
-      this.toDoList.splice;
+     deleteTask(tasks, i) {
+      tasks.splice(i, 1);
      }
-
+    },
    });
