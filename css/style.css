@@ -1,7 +1,7 @@
 :root {
  --bs-primary: rgba(223, 120, 97, 1);
  --bs-secondary: rgba(236, 179, 144, 1);
- --bs-success: rgba(148, 180, 159, 1);
+ --bs-danger: rgba(148, 180, 159, 1);
 }
 
 #app {
@@ -69,4 +69,17 @@ h1{
 
 .realinput{
   border: 0px;
+  background-color: whitesmoke;
+}
+
+.btn-circle.btn-xl {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.btn-danger{
+  background-color: var(--bs-danger);
+  border-color: var(--bs-danger);
 }

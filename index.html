@@ -15,6 +15,12 @@
       integrity="sha512-F5fn88UDJWd0T1GwpnIpbuFuSxCgXNnJhIihkiWeqYUyLt3oPUaYzL774VjL7eGj8ktZCZQS//txAxgokiz1Lw=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
+      integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -22,18 +28,41 @@
     <div id="app">
       <div class="container tdlbody">
         <h1 class="text-center mb-4">the vuejs to do list</h1>
-        <div v-for ="(toDo, i) in toDoList" class="form-check">
-          <label class="form-check-label" for="flexCheckDefault" :class="{'done' : toDo.completed}" @click="toggleTask(i)">
+        <div v-for="(toDo, i) in toDoList" class="form-check">
+          <label
+            class="form-check-label"
+            for="flexCheckDefault"
+            :class="{'done' : toDo.completed}"
+            @click="toggleTask(i)"
+          >
             {{ toDo.name }}
           </label>
-          <button type="button" @click="deleteTask(i)" class="btn btn-danger deleteTaskBtn">X</button>
+          <button
+            type="button"
+            @click="deleteTask(i)"
+            class="btn btn-danger deleteTaskBtn btn-circle btn-xl"
+          >
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
         </div>
         <div class="input-group my-3 newtaskinput">
-         <input v-model="userTask" @keyup.enter="addTask()" type="text" class="form-control realinput" placeholder="write down your new task...">
-         <button @click="addTask()" class="btn btn-outline-secondary" type="button" id="button-addon2">add task</button>
-       </div>
+          <input
+            v-model="userTask"
+            @keyup.enter="addTask()"
+            type="text"
+            class="form-control realinput"
+            placeholder="write down your new task..."
+          />
+          <button
+            @click="addTask()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            add task
+          </button>
+        </div>
       </div>
-
     </div>
     <script src="js/script.js"></script>
   </body>
